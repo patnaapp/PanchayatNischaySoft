@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="UserPrompt">कृपया लॉगिन करें</string>
+    <string name="UserHint">आईडी दर्ज करें</string>
+    <string name="PassHint">पास वर्ड दर्ज करें</string>
+    <string name="LoginButtonText">लॉगिन करें</string>
+    <string name="show_pwd">  पासवर्ड देखें</string>
+    <string name="hide_pwd">  पासवर्ड छिपाएं</string>
+    <string name="app_name">हर घर नल जल निरीक्षण</string>
+    <string name="action_settings">Settings</string>
+    <string name="app_name_long">निश्चय योजना</string>
+    <string name="headertext">मुख्य मंत्री ग्रामीण (पेय जल / गली- नाली पक्कीकरण) निश्चय योजना</string>
+    <string name="headertext1">मुख्य मंत्री ग्रामीण पेय जल निश्चय योजना</string>
+    <string name="headertext2">मुख्य मंत्री ग्रामीण गली- नाली पक्कीकरण निश्चय योजना</string>
+    <string name="Rs">\u20B9</string>
+    <string name="rs">\u20A8</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">e-PacsMgmt</string>
+    <string name="spinner_title">-Select Range-</string>
+    <string name="div_spinner_title">-Select District-</string>
+    <string name="spinner_fy">-Select Financial Year-</string>
+    <string name="heading">Entry by PACS</string>
+    <string name="heading_procurement">A. किसानों से धान खरीद	  </string>
+    <string name="heading_SupToRiceMill">B. चावल मिल को धान  आपूर्ति</string>
+    <string name="heading_RcptFromRiceMill">C. चावल मिल से CMR	प्राप्ति </string>
+    <string name="heading_SupToSFC_CMR">D. SFC को  CMR आपूर्ति</string>
+    <string name="procQty">धान अधिप्राप्ति की मात्रा \n(क्विंटल में)   :  </string>
+    <string name="procNoOfFarmers">किसानो की संख्या   :   </string>
+    <string name="SupplyToSFC_Paddy">SFC को आपूर्ति की गई धान की मात्रा(क्विंटल में) </string>
+    <string name="SupplyToRM_MillName"> चावल मिल का नाम  :   </string>
+    <string name="RM_Address"> पता   :   </string>
+    <string name="SupplyToRM_PaddyQty">धान की मात्रा क्विंटल में)	</string>
+    <string name="RcptFromRiceMill_MillName"> चावल मिल का नाम  :   </string>
+    <string name="RcptFromRiceMill_CMRQty">CMR की मात्रा (क्विंटल में)</string>
+    <string name="SupToSFC_CMR_CMRQty">CMR की मात्रा(क्विंटल में)</string>
+    <string name="PaddyFromFarmers">A. किसानों से धान खरीद	</string>
+    <!-- <string name="PaddyToSFC">B. SFC को  धान आपूर्ति	</string> -->
+    <string name="PaddyToMills">B. चावल मिल को धान  आपूर्ति	</string>
+    <string name="CMRFromMills">C. चावल मिल से CMR	प्राप्ति</string>
+    <string name="CMRToSFC">D. SFC को  CMR आपूर्ति</string>
+    <string name="drawer_open">Open drawer</string>
+    <string name="drawer_close">Close drawer</string>
+
+    <string-array name="reporttype">
+        <item>- Select Report Type -</item>
+        <item>A. किसानों से धान खरीद</item>
+        <item>B. चावल मिल को धान  की आपूर्ति</item>
+        <item>C. चावल मिल से CMR प्राप्ति </item>
+        <item>D. SFC को  CMR की आपूर्ति</item>
+    </string-array>
+    <string-array name="month_array">
+        <item>- Select Month-</item>
+        <item value="1">जनवरी</item>
+        <item value="2">फरवरी</item>
+        <item value="3">मार्च</item>
+        <item value="4">अप्रैल</item>
+        <item value="5">मई</item>
+        <item value="6">जून</item>
+        <item value="7">जुलाई</item>
+        <item value="8">अगस्त</item>
+        <item value="9">सितम्बर</item>
+        <item value="10">अक्टूबर</item>
+        <item value="11">नवम्बर</item>
+        <item value="12">दिसंबर</item>
+    </string-array>
+    <string-array name="ans1_type">
+        <item value="0">SELF</item>
+        <item value="1">OTHERS</item>
+    </string-array>
+
+    <string name="title_activity_status_">Status_Activity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_contact_details_main">ContactDetailsMainActivity</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_example">Example action</string>
+    <string name="title_activity_registration">RegistrationActivity</string>
+
+    <style name="DefaultButtonText">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#979797</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">3dp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:shadowColor">#f9f9f9</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+
+    <string name="title_activity_farmer_home">FarmerHomeActivity</string>
+    <string name="title_activity_ward_vikash_sammity_list">WardVikashSammityListActivity</string>
+</resources>

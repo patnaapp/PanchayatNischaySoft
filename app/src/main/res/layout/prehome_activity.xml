@@ -1,0 +1,334 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fadingEdge="horizontal"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fadingEdge="horizontal" >
+
+        <include
+            android:id="@+id/header"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            layout="@layout/header_view_img" />
+
+<!--        <include-->
+<!--            android:id="@+id/header"-->
+<!--            android:layout_width="fill_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentLeft="true"-->
+<!--            android:layout_alignParentTop="true"-->
+<!--            layout="@layout/header_view_home" />-->
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_margin="36dp"
+        android:id="@+id/tv_header"
+        android:layout_below="@+id/RelativeLayout01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@color/colorPrimary"
+        android:text="मुख्यमंत्री निश्चय योजना"/>
+
+    <LinearLayout
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:onClick="OnClick_DoPhysicalVerification"
+                    android:layout_margin="6dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:padding="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/cardshape">
+
+                    <ImageView
+                        android:id="@+id/iv_ps"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:onClick="OnClick_DoPhysicalVerification"
+                        android:padding="4dp"
+                        android:src="@drawable/p_status" />
+
+                    <TextView
+                        android:layout_margin="4dp"
+                        android:id="@+id/tv_ps_hindi"
+                        android:layout_below="@+id/iv_ps"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="भौतिक स्थिति"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="15sp"
+                        android:textStyle="bold"/>
+
+                    <LinearLayout
+                        android:layout_below="@+id/tv_ps_hindi"
+                        android:id="@+id/ll_divi"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@android:color/white"
+                        android:orientation="vertical"/>
+
+                    <TextView
+                        android:layout_marginTop="4dp"
+                        android:layout_below="@+id/ll_divi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Physical Status"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="15sp"
+                        android:textStyle="bold"/>
+                </RelativeLayout>
+
+            <RelativeLayout
+                android:onClick="OnClick_DoPhysicalInspection"
+                android:layout_margin="6dp"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cardshape">
+
+                <ImageView
+                    android:id="@+id/iv_pi"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="left"
+                    android:onClick="OnClick_DoPhysicalInspection"
+                    android:padding="4dp"
+                    android:src="@drawable/p_inspect2" />
+
+                <TextView
+                    android:layout_margin="4dp"
+                    android:id="@+id/tv_pi_hindi"
+                    android:layout_below="@+id/iv_pi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="भौतिक निरीक्षण"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="15sp"
+                    android:textStyle="bold"/>
+
+                <LinearLayout
+                    android:layout_below="@+id/tv_pi_hindi"
+                    android:id="@+id/ll_divii"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/white"
+                    android:orientation="vertical"/>
+
+                <TextView
+                    android:layout_marginTop="4dp"
+                    android:layout_below="@+id/ll_divii"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Physical Inspection"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="15sp"
+                    android:textStyle="bold"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:onClick="OnClick_goToLoginScreen"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/cardshape">
+
+            <ImageView
+                android:id="@+id/iv_logout"
+                android:layout_centerHorizontal="true"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="left"
+                android:onClick="OnClick_goToLoginScreen"
+                android:padding="4dp"
+                android:src="@drawable/shutdown" />
+
+            <TextView
+                android:layout_margin="4dp"
+                android:id="@+id/tv_logout_hindi"
+                android:layout_below="@+id/iv_logout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="लॉगआउट"
+                android:textColor="@color/colorPrimary"
+                android:layout_centerHorizontal="true"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_below="@+id/tv_logout_hindi"
+                android:id="@+id/ll_divi_log"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/white"
+                android:orientation="vertical"/>
+
+            <TextView
+                android:layout_marginTop="4dp"
+                android:layout_below="@+id/ll_divi_log"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Logout"
+                android:textColor="@color/colorPrimary"
+                android:layout_centerHorizontal="true"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_margin="5dp"-->
+<!--            android:layout_height="55dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:background="@drawable/green_curv_area"-->
+<!--            android:clickable="true"-->
+<!--            android:visibility="visible"-->
+<!--            android:onClick="OnClick_DoPhysicalVerification"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="left"-->
+<!--                android:padding="4dp"-->
+<!--                android:onClick="OnClick_DoPhysicalVerification"-->
+<!--                android:src="@drawable/newentry"/>-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:text="Physical Status (भौतिक स्थिति)"-->
+<!--                android:textColor="#ffffff"-->
+<!--                android:layout_marginLeft="8dp"-->
+<!--                android:gravity="center"-->
+<!--                android:textSize="17sp"-->
+<!--                android:onClick="OnClick_DoPhysicalVerification"-->
+<!--                android:textStyle="bold"/>-->
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_margin="5dp"-->
+<!--            android:layout_height="55dp"-->
+<!--            android:layout_gravity="center"-->
+
+<!--            android:background="@drawable/blue_curv_area"-->
+<!--            android:clickable="true"-->
+<!--            android:visibility="visible"-->
+<!--            android:onClick="OnClick_DoPhysicalInspection"-->
+<!--            android:orientation="horizontal">-->
+<!--            <ImageView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="left"-->
+<!--                android:padding="4dp"-->
+<!--                android:onClick="OnClick_DoPhysicalInspection"-->
+<!--                android:src="@drawable/newentry"/>-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:text="Physical Inspection (भौतिक निरीक्षण)"-->
+<!--                android:textColor="#ffffff"-->
+<!--                android:layout_gravity="left"-->
+<!--                android:gravity="center"-->
+<!--                android:layout_marginLeft="8dp"-->
+<!--                android:textSize="17sp"-->
+<!--                android:onClick="OnClick_DoPhysicalInspection"-->
+<!--                android:textStyle="bold"/>-->
+<!--        </LinearLayout>-->
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/txtVersion"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorGreyDark"
+            android:text="App Version 1.0"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:src="@drawable/nic"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textLastVisit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView1"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_horizontal"
+            android:text="Last Visit"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#3E22F2"
+            android:visibility="gone"
+            android:textSize="15sp" />
+
+<!--        <include-->
+<!--            android:id="@+id/footer"-->
+<!--            android:layout_width="fill_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:layout_alignParentLeft="true"-->
+<!--            layout="@layout/footer" />-->
+    </LinearLayout>
+
+</RelativeLayout> <!-- android:background="#0A274F" -->

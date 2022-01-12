@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <drawable name="semitransparent_white">#77ffff00</drawable>
+    <drawable name="app_white_background">#ffffff</drawable>
+
+    <color name="colorPrimary">#306F6F</color>
+    <color name="colorPrimaryDark">#214D4D</color>
+    <color name="colorAccent">#E7B008</color>
+    <color name="colorAccentLight">#FFC107</color>
+
+    <color name="colorGrey">#a9a9a9</color>
+    <color name="colorbackground">#EEEEEE</color>
+    <color name="colorGreyDark">#858383</color>
+    <color name="colorRed">#8B1A11</color>
+    <color name="backgroundDim">#40000000</color>
+
+    <color name="text_forecolor">#0814C1</color>
+    <color name="back_color_white">#ffffff</color>
+    <color name="transparent">#0067D9</color>
+    <color name="green">#80cf00</color>
+    <color name="red">#d63514</color>
+    <color name="yellow">#f5e100</color>
+
+</resources>

@@ -1,0 +1,122 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:background="@drawable/splansnew"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#BFFFFFFF"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/headertext"
+        android:textColor="@color/colorPrimary"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:background="#BFFFFFFF"
+        android:textStyle="bold|italic" />
+
+<!--    <TextView-->
+<!--        android:visibility="gone"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_margin="5dp"-->
+<!--        android:textColor="#ff0008"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:ellipsize="marquee"-->
+<!--        android:textIsSelectable="true"-->
+<!--        android:singleLine="true"-->
+<!--        android:gravity="center"-->
+<!--        android:textSize="24dp"-->u
+<!--        android:textStyle="bold|italic" />-->
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:id="@+id/llVersion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="35dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:background="@drawable/circular_shape_white"
+            android:padding="15dp"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:src="@drawable/prd_logo"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="पंचायती राज विभाग"
+            android:textColor="@color/colorRed"
+            android:textStyle="bold"
+            android:textSize="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Panchayati Raj Department, Govt. of Bihar"
+            android:textColor="@color/colorRed"
+            android:textStyle="bold"
+            android:textSize="15dp"/>
+
+        <LinearLayout
+            android:background="#BFFFFFFF"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:orientation="horizontal">
+
+            <ProgressBar
+                android:id="@+id/progressVersion"
+                android:layout_width="50dp"
+                android:indeterminateDrawable="@drawable/my_progress"
+                android:layout_height="50dp"/>
+
+            <TextView
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Loading...."
+                android:textColor="@color/colorPrimary"
+                android:textSize="17sp"
+                android:padding="5dp"
+                android:textStyle="bold|italic" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:background="#BFFFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:src="@drawable/nic"
+        android:layout_alignParentBottom="true"/>
+
+    <TextView
+        android:id="@+id/textview_marguee"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:textColor="#7b2b00"
+        android:shadowColor="#fcce01"
+        android:textSize="37sp"
+        android:shadowDx="5"
+        android:shadowDy="4"
+        android:shadowRadius="5"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_marginBottom="2px"
+        android:textStyle="bold|italic" />
+
+</RelativeLayout>

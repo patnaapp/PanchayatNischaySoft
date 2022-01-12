@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill"
+        android:padding="5dp" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="#1b5e20"
+            android:clickable="true"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/btnFarmers"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:layout_weight=".80"
+                android:background="#1b5e20"
+                android:clickable="true"
+                android:text="@string/PaddyFromFarmers"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".20"
+                android:textColor="#ff8100" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="#1b5e20"
+            android:gravity="center"
+            android:visibility="gone" >
+
+           <!--  <Button
+                android:id="@+id/btnSFC_Paddy"
+                android:layout_width="0dp"
+                android:layout_height="42dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="#1b5e20"
+                android:text="@string/PaddyToSFC"
+                android:textColor="#ffffff" /> -->
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill"
+        android:padding="5dp" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="#1b5e20"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/btnRM_Paddy"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:layout_weight=".80"
+                android:background="#1b5e20"
+                android:text="@string/PaddyToMills"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight=".20"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="#1b5e20"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/btnRM_CMR"
+                android:layout_width="0dp"
+                android:layout_height="42dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="#1b5e20"
+                android:text="@string/CMRFromMills"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill"
+        android:padding="5dp" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="#1b5e20"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/btnSFC_CMR"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:layout_weight=".90"
+                android:background="#1b5e20"
+                android:text="@string/CMRToSFC"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight=".10"
+                android:text="" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/border"
+        android:orientation="vertical"
+        android:padding="5dp" >
+
+        <ListView
+            android:id="@+id/grid"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rlHint"
+            android:layout_margin="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:clickable="true"
+            android:divider="#00aaff"
+            android:dividerHeight="1dp"
+            android:numColumns="2" />
+
+        <TextView
+            android:id="@+id/empty_list_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="No Pendings or Select Type"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+</LinearLayout>
